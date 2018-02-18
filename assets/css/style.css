@@ -1,0 +1,153 @@
+/*------------------------------------*/
+
+/*----- BASIC SETUP ------*/
+
+/*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #fff;
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-family: 'Lato', sans-serif;
+}
+
+/*------------------------------------*/
+
+/* REUSEABLE COMPONENTS*/
+
+/*------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*----- HEADINGS ------*/
+
+h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*----- BUTTONS ------*/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    color: #fff;
+    transition: background-color 300ms, border 300ms, color 300ms;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background: #f39c12;
+    border: 1px solid #f39c12;
+    border-radius: 200px;
+    margin-right: 15px;
+}
+
+.btn-more:link,
+.btn-more:visited {
+    border: 1px solid #f39c12;
+    border-radius: 200px;
+    color: #f39c12;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #d35400;
+    border: 1px solid #d35400;
+}
+
+.btn-more:hover {
+    color: #fff;
+}
+
+/*------------------------------------*/
+
+/*----- HEADER ------*/
+
+/*------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    margin-top: 30px;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-top: 55px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-size: 80%;
+    font-weight: 300;
+    padding: 8px 0;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom ease-in 350ms, color 300ms;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+
+    border-bottom: 2px solid #f39c12;
+}
+
+.main-nav li a:active {
+    color: #f39c12;
+}
